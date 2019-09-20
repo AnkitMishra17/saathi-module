@@ -1,0 +1,102 @@
+<%- include("partials/header.ejs") %>
+    <style>
+        body{
+            overflow-x: hidden;
+            font-family: Quicksand, 'sans-serif';
+        }
+        img{
+            width: 420px;
+        }
+    @media only screen and (max-width: 768px){
+
+        img{
+            width: 320px;
+        }
+    }
+    </style>
+    <body>
+      <section class="banner-bg">
+             
+                            
+        <div class="show-login-btn" style="position: fixed; padding: 25px; color: black; z-index: 999;">
+        <i class="fas fa-bars fa-3x "></i>
+        </div>
+        <h1 class="display-4 overlay text-center">SATHI</h1>
+        <%- include("partials/sidebar.ejs") %>
+      </section>
+          <div class="row sathi-1 mt-5 mx-2 p-5 d-flex justify-content-center">
+              <div class="col-md-5">
+                  <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                      At OPDEMY, we provide an online counselling and emotional support platform designed to foster mental wellness. Our student counseling and mental health awareness initiative to support exam going students.
+                  </p>
+                  <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                      The stress of competitive examinations is a harsh reality of today's world. It takes a toll on your mental and emotional well being and affects your performance in the examination.
+                  </p>
+                  <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                      The stress of competitive We see countless incidences of unmanageable stress, anxiety, depression and a nervous breakdown before exams which at times forces the students to take extreme steps.
+                  </p>
+              </div>
+              <div class="col-md-5 d-flex justify-content-center">
+                    <img src="./public/sathi.png" alt="">
+              </div>
+          </div>
+          <div class="row sathi-2 mt-3 mx-2 p-5 d-flex justify-content-center ">
+              <div class="col-md-5 d-flex justify-content-center">
+                    <img src="./public/chill.png" alt="">
+              </div>
+              <div class="col-md-5 mt-4">
+                  <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                        We and some motivated officers have seen this and we realize the importance of a helping hand during this    vulnerable phase in our life.
+                  </p>
+                  <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                        We, at SATHI, are a team of officers and qualified doctors who aim at helping students stay motivated and manage their stress in order to optimize their performance in competitive exams.
+                  </p>
+                  <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">   
+                        The right advice at the right time can be life-changing - what we sometimes need is just someone who hears us out and helps us with his experience.
+                  </p>
+              </div>
+          </div>
+          <div class="jumbotron mt-4" style="background-image: linear-gradient( 109.6deg,  rgba(170,255,169,1) 11.2%, rgba(17,255,189,1) 91.1% );">
+            <p class="text-primary display-4 font-weight-bold text-center">Our Experts</p>
+            <hr class="w-25">
+          <div class="d-flex justify-content-center">
+                <a href="">
+                    <div class="image-card" style="border-radius: 50%">
+                      <img src="./public/expert.png" style="width: 50vh; height: 50vh;" alt="">
+                    </div>
+                </a>
+          </div>
+          </div>
+          <div class="jumbotron mt-4" style="background-image: linear-gradient(120deg,#93F9B9 0%,#A6FFCB 25%,#93F9B9 17%)">
+              <h1 class="main_title text-center" style="font-size: 25px;">
+                  We respect your privacy and we believe in your potential.</h1>
+              <p class="lead text-center mt-5 text-primary">
+                  Stress management is the key to success today. Share your concerns and get personalized advice from experts. Stay aware, stay motivated. Unleash a Better You- With 24X7 support from our experts, bid goodbye to your old self and be on your way to becoming a better you.
+              </p>
+              <hr class="my-4">
+              <p class="text-center text-primary font-weight-bold" style="font-size: 25px;">
+                  Join SATHI - your friend for difficult times.
+              </p>
+              <hr class="my-5 w-50">
+              <h3 class="text-center" style="text-transform: capitalize;">
+                  Meanwhile, know more about
+              </h3>
+              <ul class="nav mt-4 nav-tabs nav-fill">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Anxiety">Anxiety</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Counselling">Counselling</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Stress">Stress</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Depression">Depression</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Addiction">Addiction</a>
+                  </li>
+               </ul>
+          </div>
+<%- include("partials/footer.ejs") %>

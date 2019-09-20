@@ -1,0 +1,178 @@
+<%- include("partials/header.ejs") %>
+    <style>    
+    .banner-bg{
+        background-image: url('../public/counsellingbg.jpg');
+        height: 500px;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    p{
+        font-size: 17px;
+        word-spacing: 4px;
+    }
+    h1,h2,h3{
+        text-transform: capitalize;
+    }
+    ul li{
+        list-style-type: none;
+    }
+    @media only screen and (max-width: 768px){
+     .banner-bg{
+        background-image: url('../public/counsellingbg.jpg');
+        height: 250px;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+     .btn{
+        background-color: #16c892;
+        text-transform: capitalize;
+        font-size: 12px;
+        padding: 9px;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    }
+    </style>
+    <section class="banner-bg">         
+                            
+        <div class="show-login-btn" style="position: fixed; padding: 25px; color: black; z-index: 999;">
+        <i class="fas fa-bars fa-3x "></i>
+        </div>
+        <h1 class="overlay text-center font-weight-light">Counselling</h1>
+        <%- include("partials/sidebar.ejs") %>
+      
+    </section>
+    
+    <div class="row sathi-2 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+            <div class="col-md-5">
+                <h2 class="text-center">What Is Counselling?</h2>
+                <hr class="my-2">
+                <p class="text-primary my-4 mx-1 font-weight-bold">
+                        Counselling falls under the umbrella term ‘talking therapies’ and allows people to discuss their problems and any difficult feelings they encounter in a safe, confidential environment. It is a process people seek when they want to change something in their lives or explore their thoughts and feelings in more depth.
+                </p>
+            </div>
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="image-card">
+                    <img src="./public/counselling.jpg" alt="">
+                </div>
+            </div>
+    </div>
+    <div class="sathi-1 mt-5 p-2 py-5 ">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                        <div class="image-card">
+                            <img src="./public/83.jpg" style="width: 400px" alt="">
+                        </div>            
+                </div>
+                <div class="col-md-5">
+                        <h2 class="text-center">What can Counselling help with?</h2>
+                        <hr class="my-2">
+                        <p class="text-primary mx-1 p-2 text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                Counselling can be useful for anyone who wants to explore the way they are thinking or feeling further, and for anyone experiences a problem or issue they are keen to resolve. People may speak to a counsellor because they feel they cannot speak to their other half/friends/family about such personal issues, or they may wish to speak to a professional with an aim viewpoint.
+                        </p>
+                </div>
+        </div>
+    </div>
+
+    <div class="sathi-2 mt-5 p-2 py-5 ">
+        <h1 class="text-center">Common subjects that can be addressed within counselling include</h1>
+        <hr class="my-3 w-50">
+                <div class="row mx-2 mt-5 d-flex justify-content-center">
+                        <div class="col-md-4 m-2">
+                            <h1 class="text-center">Addictions</h1>
+                            <hr class=" w-25">
+                            <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                    Wherever there is a physical addiction to a substance or activity, there is likely to be a psychological addiction too. Counselling aims to relieve psychological addiction by exploring the root cause while helping to develop new ways of thinking.
+                            </p>
+                        </div>
+                        <div class="col-md-4 m-2">
+                                <h1 class="text-center">Bereavement</h1>
+                                <hr class=" w-25">
+                                <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                        Losing a loved one is a difficult event in anyone’s life. The loss can bring up a wide range of emotions, including guilt and anger. Some people receive help from speaking openly to a counsellor about their feelings to help ease the process and resolve any remaining issues they may have.
+                                </p>
+                        </div>
+                </div>
+                <hr class="my-3 w-75">
+                <div class="row mx-2 mt-3 d-flex justify-content-center">
+                        <div class="col-md-4 m-2">
+                            <h1 class="text-center">Bullying</h1>
+                            <hr class=" w-25">
+                            <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                    Being the victim of any form of abuse - verbal, emotional or physical - can lead to issues that may affect you all your life. Counselling can offer victims the chance to seek help from authorities (if appropriate) and to address the psychological repercussions in a safe environment.
+                            </p>
+                        </div>
+                        <div class="col-md-4 m-2">
+                                <h1 class="text-center">Illness</h1>
+                                <hr class=" w-25">
+                                <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                        Suffering from a long-term illness such as cancer or dementia can turn anyone’s world upside down. Counselling can help sufferers come to terms with their illness while offering emotional support and coping mechanisms.
+                                </p>
+                        </div>
+                </div>
+                <hr class="my-3 w-75">
+                <div class="row mx-2 mt-3 d-flex justify-content-center">
+                        <div class="col-md-4 m-2">
+                            <h1 class="text-center">Mental Health</h1>
+                            <hr class="w-25">
+                            <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                    Suffering from a mental health issue such as schizophrenia or depression can feel incredibly isolating. Counselling looks to discuss the feelings that arise in conjunction with these kinds of mental health issues and overcome any personal challenges or frustrations. 
+                            </p>
+                        </div>
+                        <div class="col-md-4 m-2">
+                                <h1 class="text-center">Relationships </h1>
+                                <hr class=" w-25">
+                                <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                    Covering all types of relationships, counselling can be used to discuss issues in families, friendships, and couples. Problems could involve anything from a poor relationship with a parent, difficulties in a friendship or with a partner, or even your relationships at work.
+                                </p>
+                        </div>
+                </div>
+                <hr class="my-3 w-75">
+                <div class="row mx-2 mt-3 d-flex justify-content-center">
+                        <div class="col-md-4 m-2">
+                            <h1 class="text-center">Trauma</h1>
+                            <hr class=" w-25">
+                            <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                    Whether you have been involved in an accident or you have been the victim of abuse, the psychological impact of trauma can last years after the event itself. In a counselling session, it encourages trauma victims to explore their feelings about the incident and investigate how these could be resolved or changed.
+                            </p>
+                        </div>
+                        <div class="col-md-4 m-2">
+                                <h1 class="text-center">Other</h1>
+                                <hr class=" w-25">
+                                <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                        Feelings of stress, anxiety and low self-esteem are becoming all too common today. Counselling can offer practical advice for overcoming these kinds of issues and allowing you the space to vent your frustrations and feelings.
+                                </p>
+                        </div>
+                </div>
+    </div>
+    <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="image-card">
+                        <img src="./public/counselling.gif" style="width: 400px" alt="">
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-5 d-flex flex-column justify-content-center">
+                    <h2 class="text-center">How can counselling help?</h2>
+                    <hr class="w-75">
+                    <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                        The way counselling can help will depend on the person receiving the treatment. For many, the fact that counselling offers a safe and confidential environment to speak in is all it takes.
+                    </p>
+                    <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                            In life, what we say to others can sometimes have a knock-on effect, altering relationships and the way people see each other. Counselling eliminates this problem and offers you space and freedom to explore your own thoughts with an unbiased party.
+                    </p>
+                    <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                            While counsellors may not give you concrete advice or a checklist of things to do to feel better, what they will do is help you uncover your own insight and understanding of your problems providing you with the tools which will help you resolve them on your own.
+                    </p>
+                </div>
+    </div>
+    
+      
+
+<%- include("partials/footer.ejs") %>

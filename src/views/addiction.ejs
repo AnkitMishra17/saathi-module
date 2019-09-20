@@ -1,0 +1,245 @@
+<%- include("partials/header.ejs") %>
+    <style>    
+    .banner-bg{
+        background-image: url('../public/90.jpg');
+        height: 500px;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    img{
+        width: 450px;
+    }
+    h1,h2,h3{
+        text-transform: capitalize;
+    }
+    ul li{
+        list-style-type: none;
+    }
+    p{
+        font-size: 17px;
+        word-spacing: 4px;
+    }
+    .overlay{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: 'molengo', sans-serif;
+        font-size: 75px;
+    }
+    @media only screen and (max-width: 768px){
+     .banner-bg{
+        background-image: url('../public/90.jpg');
+        height: 250px;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+     .btn{
+        background-color: #16c892;
+        text-transform: capitalize;
+        font-size: 12px;
+        padding: 9px;
+    }
+    .overlay{
+        font-size: 45px;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    }
+    </style>
+    <section class="banner-bg">         
+                            
+        <div class="show-login-btn" style="position: fixed; padding: 25px; color: black; z-index: 999;">
+        <i class="fas fa-bars fa-3x "></i>
+        </div>
+        <h1 class=" overlay text-center font-weight-light">Addiction</h1>
+        <%- include("partials/sidebar.ejs") %>
+      
+    </section>
+    
+    <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+            <div class="col-md-5">
+                <h2 class="text-center">What is Addiction?</h2>
+                <hr class="my-2">
+                <p class="text-primary mx-1 mt-3 font-weight-bold">
+                        Addiction is a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm. Addictions involve an inability to stop partaking in activities, such as gambling, eating, or working. In these circumstances, a person has a behavioral addiction.
+                </p>
+                <hr class="w-75 my-3">
+                <p class="text-primary font-weight-bold">
+                        <i class="fas fa-angle-double-right mx-2"></i>Addiction is a chronic disease that can also result from taking medications.
+                </p>
+                <hr class="w-50 my-2">
+                <p class="text-primary font-weight-bold">
+                        <i class="fas fa-angle-double-right mx-2"></i>When a person experiences addiction, they cannot control how they use a substance or partake in an activity, and they become dependent on it to cope with daily life.
+                </p>
+                <hr class="w-50 my-2">
+                <p class="text-primary font-weight-bold">
+                        <i class="fas fa-angle-double-right mx-2"></i>Most people start using a drug or first engage in an activity voluntarily. However, addiction can take over and reduce self-control.
+                </p>
+            </div>
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="d-flex flex-column justify-content-center">
+                        <div class="image-card">
+                                <img src="./public/addiction.gif" alt="">          
+                        </div>
+                </div>  
+            </div>
+    </div>
+    <div class="sathi-2 mt-5 p-2 py-5 ">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="image-card">
+                                <img src="./public/hand.jpg" alt=""> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                        <h2 class="text-center">symptoms</h2>
+                        <hr class="my-2">
+                        <ul class="text-primary font-weight-bold mt-4" style="font-size: 17px; word-spacing: 4px;">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Uncontrollably seeking drugs 
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>	Uncontrollably engaging in harmful levels of habit-forming behavior
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>	Neglecting or losing interest in activities that do not involve the harmful substance or behavior 
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>	Relationship difficulties, which often involve lashing out at people who identify the dependency
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>	An inability to stop using a drug, though it may be causing health problems or personal problems, such as issues with employment or relationships
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>	Hiding substances or behaviors and otherwise exercising secrecy, for example, by refusing to explain injuries that occurred while under the influence
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>	Profound changes in appearance, including a noticeable abandonment of hygiene
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>	Increased risk-taking, both to access the substance or activity and while using it or engaging in it
+                            </li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+    <div class="sathi-2 mt-5 p-2 py-5 ">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-5">
+                        <h2 class="text-center">Withdrawal</h2>
+                        <hr class="my-2">            
+                        <p class="text-primary text-center font-weight-bold">
+                                Stopping the use of a drug can lead to anxiety. When a person has an addiction, and they stop taking the substance or engaging in the behavior, they may experience certain symptoms.
+                        </p>
+                        <ul class="text-primary font-weight-bold mt-4" style="font-size: 17px; word-spacing: 4px;">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Anxiety 
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Irritability
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Tremors and shaking 
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Nausea
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Vomiting
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Fatigue
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>A loss of appetite
+                            </li>
+                            <hr class="my-2">
+                        </ul>
+                        <p class="text-primary text-center font-weight-bold">
+                                If a person has regularly used alcohol or benzodiazepines, and they stop suddenly or without medical supervision, withdrawal can be fatal.
+                        </p>                        
+                </div>
+                <div class="col-md-5 d-flex justify-content-center">
+                        <div class="d-flex flex-column justify-content-center">
+                                <div class="image-card">
+                                        <img src="./public/social_addiction.jpg" alt="">
+                                </div>
+                        </div>            
+                </div>
+        </div>
+    </div>
+    <div class="sathi-1 mt-5 p-2 py-5 ">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                        <div class="d-flex flex-column justify-content-center">
+                                <div class="image-card">
+                                        <img src="./public/treatmentjpg.jpg" alt="">  
+                                </div>
+                        </div>          
+                </div>
+                <div class="col-md-5">
+                        <h2 class="text-center">Treatments</h2>
+                        <hr class="my-2">            
+                        <p class="text-primary text-center font-weight-bold">
+                                Support groups and rehabilitation programs can be vital to recovery.
+                        </p>           
+                        <p class="text-primary text-center font-weight-bold">
+                                Medicinal advances and progress in diagnosing have helped the medical community develop various ways to manage and resolve the addiction.
+                        </p>
+                        <ul class="text-primary font-weight-bold mt-4" style="font-size: 17px; word-spacing: 4px;">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Behavioral therapy and counseling
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Medication and drug-based treatment
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Medical devices to treat withdrawal
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Treating related psychological factors, such as depression. 
+                            </li>
+                            <hr class="my-2">
+                            <li>
+                                    <i class="fas fa-angle-double-right mx-2"></i>Ongoing care to reduce the risk of relapse
+                            </li>
+                            <hr class="my-2">
+                        </ul>
+                        <p class="text-primary text-center font-weight-bold">
+                                Addiction treatment is highly personalized and often requires the support of the individual's community or family.
+                        </p>
+                        <p class="text-primary text-center font-weight-bold">
+                                Treatment can take a long time and maybe complicated. Addiction is a chronic condition with a range of psychological and physical effects. Each substance or behavior may require different management.
+                        </p>                        
+                </div>
+        </div>
+    </div>
+        
+    
+      
+
+<%- include("partials/footer.ejs") %>

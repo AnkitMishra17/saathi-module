@@ -1,0 +1,165 @@
+<%- include("partials/header.ejs") %>
+    <style>    
+    .banner-bg{
+        background-image: url('../public/stress.jpg');
+        height: 500px;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    img{
+        width: 450px;
+    }
+    p{
+        font-size: 17px;
+        word-spacing: 4px;
+    }
+    h1,h2,h3{
+        text-transform: capitalize;
+    }
+    @media only screen and (max-width: 768px){
+     .banner-bg{
+        background-image: url('../public/stress.jpg');
+        height: 250px;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+     .btn{
+        background-color: #16c892;
+        text-transform: capitalize;
+        font-size: 12px;
+        padding: 9px;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    }
+    </style>
+    <section class="banner-bg">         
+                            
+        <div class="show-login-btn" style="position: fixed; padding: 25px; color: black; z-index: 999;">
+        <i class="fas fa-bars fa-3x "></i>
+        </div>
+        <h1 class="text-center overlay font-weight-light text-white">Stress</h1>
+        <%- include("partials/sidebar.ejs") %>
+      
+    </section>
+    
+    <div class="row sathi-2 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+            <div class="col-md-5">
+                <h3 class="text-center">Introduction</h3>
+                <hr class="my-2">
+                <p class="text-primary font-weight-bold">
+                    Today’s world is full of frustrations, deadlines, and demands and stress are now commonplace in people’s life. Stress isn’t always bad, though. Stress within our comfort zone can help us to perform under pressure, motivate us to do our best, even keep us safe when danger looms. But when stress becomes overwhelming, it can damage our health, mood, relationships, and quality of life. However, we can protect ourselves by understanding how the body’s stress response works, recognizing the signs and symptoms of stress overload, and taking steps to reduce its harmful effects.
+                </p>
+            </div>
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="image-card">
+                    <img src="./public/stress2.jpg" alt="">
+                </div>
+            </div>
+    </div>
+    <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="image-card">
+                    <img src="./public/stress.gif" alt="">
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h2 class="text-center">What is Stress?</h2>
+                <hr class="my-2">
+                <p class="text-primary font-weight-bold">
+                        The term “stress”, as it is currently used was coined by Hans Selye in 1936, who defined it as “the non-specific response of the body to any demand for change”. In other words, Stress is our body’s way of responding to any kind of demand or threat. When we feel threatened, our nervous system responds by releasing a flood of stress hormones, including adrenaline and cortisol, which rouse the body for emergency action. Our heart pounds faster, muscles tighten, blood pressure rises, breath quickens, and our senses become sharper. These physical changes increase our strength and stamina, speed our reaction time, and enhance our focus.
+                </p>
+            </div>
+    </div>
+    <div class="sathi-2 mt-5  p-2 py-5 ">
+        <h1 class="text-center">Types of Stress</h1>
+        <hr class="my-2 w-25">
+            <div class="row mx-2 mt-3 d-flex justify-content-center">
+                    <div class="col-md-3 m-4">
+                        <h2 class="text-center">Acute Stress</h2>
+                        <hr class="my-2">
+                        <p class="text-primary font-weight-bold">
+                            Acute stress is the stress that comes with day to day living. It is not necessarily a bad thing, as it also means excitement and pushes us to do our best. For instance, the butterflies in your stomach just before you go to court for a basketball match is acute stress.
+                        </p>
+                    </div>
+                    <div class="col-md-3 m-4">
+                        <h2 class="text-center">Episodic Stress</h2>
+                        <hr class="my-2">
+                        <p class="text-primary font-weight-bold">
+                                Episodic stress is basically when we get overwhelmed by the number of things we have to do. It is basically when acute stress happens more frequently than it should. People with acute stress are always in a rush, are irritable and may even appear rude due to all the nervous energy they have.
+                        </p>
+                    </div>
+                    <div class="col-md-3 m-4">
+                        <h2 class="text-center">Chronic Stress</h2>
+                        <hr class="my-2">
+                        <p class="text-primary font-weight-bold">
+                                Chronic stress is a stress that results from repeated exposure to situations that lead to stress hormones. Chronic stress comes when a person is unable to see a way out of a miserable situation.
+                        </p>
+                    </div>
+            </div>
+    </div>
+
+    <div class="sathi-2 mt-5  p-2 py-5 ">
+            <h1 class="text-center">Causes of Stress</h1>
+            <hr class="my-2 w-25">
+                <div class="row mx-2 mt-3 d-flex justify-content-center">
+                        <div class="col-md-4 m-4">
+                            <h2 class="text-center">Threat</h2>
+                            <hr class="my-2">
+                            <p class="text-primary text-center font-weight-bold">
+                                    A perceived threat may make a person feel stressed. It could be a physical threat, social threat, financial threat, etc.
+                            </p>
+                        </div>
+                        <div class="col-md-4 m-4">
+                            <h2 class="text-center">Fear</h2>
+                            <hr class="my-2">
+                            <p class="text-primary text-center font-weight-bold">
+                                    Like a threat, fear can also lead a person to feel stressed. Fear also leads to imagined outcomes which may or may not be true.
+                            </p>
+                        </div>
+                </div>
+                <div class="row mx-2 mt-3 d-flex justify-content-center">
+                        <div class="col-md-4 m-4">
+                            <h2 class="text-center">Uncertainty</h2>
+                            <hr class="my-2">
+                            <p class="text-primary text-center font-weight-bold">
+                                    Uncertainty about something which we are unable to predict or control can cause us to be feared and threatened which can, in turn, result in stress.
+                            </p>
+                        </div>
+                        <div class="col-md-4 m-4">
+                            <h2 class="text-center">Cognitive dissonance</h2>
+                            <hr class="my-2">
+                            <p class="text-primary text-center font-weight-bold">
+                                    we experience cognitive dissonance when we experience a gap between what we think and what we do. It can lead to stress. For instance, I think I am a good person but if my action (or inaction) hurts someone else, I will experience cognitive dissonance and stress.
+                            </p>
+                        </div>
+                </div>
+        </div>
+        <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                        <div class="image-card">
+                                <img src="./public/stress3.gif" alt="">
+                        </div>
+                </div>
+                <div class="col-md-5">
+                    <h2 class="text-center">Stress Management</h2>
+                    <hr class="my-2">
+                    <p class="text-primary font-weight-bold">
+                            Stress is an inevitable part of everyone’s lives. What causes us stress may vary from person to person, but the fact remains that we all face some kind of stress or another. While stress cannot be completely eliminated, what we do to manage and control feeling stressed is called stress management.
+                    </p>
+                    <blockquote class="blockquote text-center">
+                            <p class="text-primary font-weight-bold font-italic">
+                                    Stress management could include yoga, meditation, breathing exercises, going for a walk, listening to music, taking part in sports, playing with a pet, changing our thinking and learning to say no, talking to friends and many more.
+                            </p>
+                    </blockquote>
+                </div>
+        </div>
+    
+      
+
+<%- include("partials/footer.ejs") %>

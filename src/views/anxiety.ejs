@@ -1,0 +1,150 @@
+<%- include("partials/header.ejs") %>
+    <style>    
+    .banner-bg{
+        background-image: url('../public/anxiety.jpg');
+        height: 500px;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    img{
+        width: 450px;
+    }
+    h1,h2,h3{
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 17px;
+        word-spacing: 4px;
+    }
+    ul li{
+        list-style-type: none;
+    }
+    @media only screen and (max-width: 768px){
+     .banner-bg{
+        background-image: url('../public/anxiety.jpg');
+        height: 250px;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+     .btn{
+        background-color: #16c892;
+        text-transform: capitalize;
+        font-size: 12px;
+        padding: 9px;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    }
+    </style>
+    <section class="banner-bg">         
+                            
+        <div class="show-login-btn" style="position: fixed; padding: 25px; color: black; z-index: 999;">
+        <i class="fas fa-bars fa-3x "></i>
+        </div>
+        <h1 class="overlay text-center font-weight-light">Anxiety</h1>
+        <%- include("partials/sidebar.ejs") %>
+      
+    </section>
+    
+    <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+            <div class="col-md-5">
+                <h2 class="text-center">What Is Anxiety?</h2>
+                <hr class="my-2">
+                <p class="text-primary font-weight-bold">
+                        Anxiety is an emotion. It is an emotion of dread, fear, and worry about everyday situations. While anxiety in small doses is good for us, because it motivates us to do our best, when anxiety gets out of hand, it impairs us from leading a happy, peaceful life and is then called an anxiety disorder.
+                </p>
+                <p class="text-primary font-weight-bold">
+                        Anxiety tends to be the result of feelings of inadequacy, indecision, and uncertainty, being ill-prepared, procrastination, etc.
+                </p>
+            </div>
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="image-card"  style="box-shadow: 0 0 0;">
+                    <img src="./public/psychoanalysis1.png" alt="">
+                </div>
+            </div>
+    </div>
+    <div class="row sathi-2 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+            <div class="col-md-5 d-flex justify-content-center">
+                    <div class="image-card"  style="box-shadow: 0 0 0;">
+                            <img src="./public/depressed1.png" alt="">
+                    </div>
+            </div>
+            <div class="col-md-5">
+                <h2 class="text-center">Understanding Anxiety</h2>
+                <hr class="my-2">
+                <p class="text-primary font-weight-bold">
+                        In order to understand what anxiety is, we must understand the ‘flight or fight’ mechanism. Our psyche tends to use certain mechanisms as a way to escape or dissolve anxiety. These mechanisms could have three characteristics – fight, flight or split. They are called defense mechanisms. In people who suffer from anxiety, the defense mechanism of fight or flight is a little exaggerated. They tend to have an over-reaction to a stimulus, basically a reaction not in proportion with the perceived threat.
+                </p>
+            </div>
+    </div>
+    <div class="sathi-1 mt-5  p-2 py-5 ">
+        <h1 class="text-center">Symptoms</h1>
+        <hr class="my-2 w-25">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <p class="text-primary mx-2 p-2 text-center font-weight-bold">
+                        While a number of different diagnoses constitute anxiety disorders, the symptoms of a generalized anxiety disorder (GAD) will often include the following:
+                    </p>
+                   <div class="col-md-5 m-4">
+                    <ul class="text-primary font-weight-bold p-3" style="font-size: 17px; word-spacing: 4px;">
+                            <li class="my-3"><i class="fas fa-dot-circle mx-2"></i>Restlessness, and a feeling of being "on-edge"</li>
+                            <li class="my-3"><i class="fas fa-dot-circle mx-2"></i>Uncontrollable feelings of worry</li>
+                            <li class="my-3"><i class="fas fa-dot-circle mx-2"></i>Increased irritability</li>
+                            <li class="my-3"><i class="fas fa-dot-circle mx-2"></i>Concentration difficulties</li>
+                            <li class="mt-3"><i class="fas fa-dot-circle mx-2"></i>Sleep difficulties, such as problems in falling or staying asleep</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center">
+                        <div class="image-card"  style="box-shadow: 0 0 0;">
+                            <img src="./public/unhappy.png" style="height: 350px;" alt="">
+                        </div>            
+                </div>
+                <p class="text-primary mx-5 mt-3 p-2 text-center font-weight-bold">
+                        While these symptoms might be normal to experience in daily life, people with GAD will experience them to persistent or extreme levels. GAD may present as vague, unsettling worry or more severe anxiety that disrupts day-to-day living.
+                </p>
+        </div>
+    </div>
+
+    <div class="sathi-2 mt-5  p-2 py-5 ">
+                <div class="row mx-2 mt-3 d-flex justify-content-center">
+                        <div class="col-md-5">
+                                <h1 class="text-center">Causes</h1>
+                                <hr class=" w-25">
+                            <p class="text-primary text-center font-weight-bold">
+                                    The causes of anxiety disorders are complicated. Many might occur at once, some may lead to others, and some might not lead to an anxiety disorder unless another is present.
+                            </p>
+                            <p class="text-primary text-center font-weight-bold">
+                                    Possible causes include environmental stressors, such as difficulties at work, relationship problems, or family issues. Genetics, as people who have family members with an anxiety disorder, are more likely to experience one themselves. Medical factors, such as the symptoms of a different disease, the effects of a medication, or the stress of an intensive surgery or prolonged recovery. Brain chemistry, as psychologists define many anxiety disorders as misalignments of hormones and electrical signals in the brain. Withdrawal from an illicit substance, the effects of which might intensify the impact of other possible.
+                            </p>
+                        </div>
+                        <div class="col-md-5 d-flex justify-content-center">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="image-card">
+                                    <img src="./public/anxiety.png" alt="">
+                                </div>        
+                        </div>
+                </div>
+                </div>
+    </div>
+    <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                        <div class="image-card">
+                            <img src="./public/anxiety.gif" alt="">
+                        </div>
+                </div>
+                <div class="col-md-5 d-flex flex-column justify-content-center">
+                    <h2 class="text-center">Self-treatment</h2>
+                    <hr class="my-2">
+                    <p class="text-primary font-weight-bold">
+                            Physical activity, a healthy diet, regular sleep and relaxation exercises may all help to reduce anxiety. Joining a support group may also help. To manage symptoms effectively, it's best to avoid caffeine, alcohol, and nicotine
+                    </p>
+                </div>
+    </div>
+    
+      
+
+<%- include("partials/footer.ejs") %>

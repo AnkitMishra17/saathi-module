@@ -1,0 +1,327 @@
+<%- include("partials/header.ejs") %>
+    <style>    
+    .banner-bg{
+        background-image: url('../public/depressionbg.jpg');
+        height: 500px;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    img{
+        width: 450px;
+    }
+    h1,h2,h3{
+        text-transform: capitalize;
+    }
+    ul li{
+        list-style-type: none;
+    }
+    p{
+        font-size: 17px;
+        word-spacing: 4px;
+    }
+    @media only screen and (max-width: 768px){
+     .banner-bg{
+        background-image: url('../public/depressionbg.jpg');
+        height: 250px;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+     .btn{
+        background-color: #16c892;
+        text-transform: capitalize;
+        font-size: 12px;
+        padding: 9px;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    }
+    </style>
+    <section class="banner-bg">         
+                            
+        <div class="show-login-btn" style="position: fixed; padding: 25px; color: black; z-index: 999;">
+        <i class="fas fa-bars fa-3x "></i>
+        </div>
+        <h1 class="overlay text-center font-weight-light text-white">Depression</h1>
+        <%- include("partials/sidebar.ejs") %>
+      
+    </section>
+    
+    <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+            <div class="col-md-5">
+                <h2 class="text-center">What is depression and what can I do about it?</h2>
+                <hr class="my-2">
+                <p class="text-primary mx-1 mt-3 font-weight-bold">
+                        Sadness, feeling down, having a loss of interest or pleasure in daily activities - these are symptoms familiar to all of us. But, if they persist and affect our life substantially, it may be depression.
+                </p>
+                <hr class="w-75 my-3">
+                <h4 class="text-center">Fast facts on depression:</h4>
+                <hr class="w-50 my-3">
+                <p class="text-primary font-weight-bold">
+                        <i class="fas fa-angle-double-right mx-2"></i>Depression seems to be more common among women than men.
+                </p>
+                <hr class="w-50 my-2">
+                <p class="text-primary font-weight-bold">
+                        <i class="fas fa-angle-double-right mx-2"></i>Symptoms include a lack of joy and reduced interest in things that used to bring a person happiness.
+                </p>
+                <hr class="w-50 my-2">
+                <p class="text-primary font-weight-bold">
+                        <i class="fas fa-angle-double-right mx-2"></i>Life events, such as bereavement, produce mood changes that can usually be distinguished from the features of depression.
+                </p>
+                <hr class="w-50 my-2">
+                <p class="text-primary font-weight-bold">
+                        <i class="fas fa-angle-double-right mx-2"></i>The causes of depression are not fully understood but are likely to be a complex combination of genetic, biological, environmental, and psychosocial factors.
+                </p>
+
+            </div>
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="image-card">
+                        <img src="./public/depression01.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="sathi-2 mt-5 p-2 py-5 ">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-5 d-flex justify-content-center">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="image-card">
+                                <img src="./public/pills.jpg" alt="">
+                            </div>    
+                        </div>           
+                </div>
+                <div class="col-md-5">
+                        <h2 class="text-center">Diagnosis starts with a consultation from a mental health expert.</h2>
+                        <hr class="my-2">
+                        <p class="text-primary mx-1 p-2 text-center font-weight-bold">
+                                Depression is a mood disorder characterized by persistently low mood and a feeling of sadness and loss of interest. It is a persistent problem, not a passing one, lasting on average 6 to 8 months.
+                        </p>
+                        <p class="text-primary mx-1 p-2 text-center font-weight-bold">
+                                The diagnosis of depression starts with a consultation with a doctor or mental health specialist. It is important to seek the help of a health professional to rule out different causes of depression, ensure an accurate differential diagnosis, and secure safe and effective treatment.
+                        </p>
+                        <p class="text-primary mx-1 p-2 text-center font-weight-bold">
+                                Questions will also be asked - "taking a history" - to establish the symptoms, their time course, and so on.
+                        </p>
+                </div>
+        </div>
+    </div>
+    <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+                <div class="col-md-5 d-flex flex-column justify-content-center">
+                    <h2 class="text-center">What does not class as depression?</h2>
+                    <hr class="w-75">
+                    <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                            Depression is different from the fluctuations in mood that people experience as a part of normal life. Temporary emotional responses to the challenges of everyday life do not constitute depression.
+                    </p>
+                    <p class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                            Likewise, even the feeling of grief resulting from the death of someone close is not itself depression if it does not persist. Depression can, however, be related to bereavement - when depression follows a loss, psychologists call it a “complicated bereavement.”
+                    </p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center">
+                    <div class="image-card">
+                        <img src="./public/depression_2.jpg" alt="">
+                    </div>
+                </div>
+    </div>
+    <div class="sathi-2 mt-5  p-2 py-5 ">
+        <h1 class="text-center">Signs and symptoms</h1>
+        <hr class="my-2 w-25">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                   <div class="col-md-5 m-4">
+                    <ul class="text-primary font-weight-bold p-3" style="font-size: 17px; word-spacing: 4px;">
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Depressed mood</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Reduced interest or pleasure in activities previously enjoyed, loss of sexual desire</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Unintentional weight loss (without dieting) or low appetite</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Insomnia (difficulty sleeping) or hypersomnia (excessive sleeping)</li>
+                            <li class="mt-3"><i class="fas fa-angle-double-right mx-2"></i>Psychomotor agitation, for example, restlessness, pacing up and down</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Delayed psychomotor skills, for example, slowed movement and speech</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Reduced interest or pleasure in activities previously enjoyed, loss of sexual desire</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Fatigue or loss of energy</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Impaired ability to think, concentrate, or make decisions</li>
+                            <li class="mt-3"><i class="fas fa-angle-double-right mx-2"></i>Recurrent thoughts of death or suicide, or attempt at suicide</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="image-card">
+                            <img src="./public/depress.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="sathi-2 mt-5  p-2 py-5 ">
+        <h1 class="text-center">Causes</h1>
+        <hr class="my-2 w-25">
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-5 d-flex flex-column justify-content-center">
+                    <div class="image-card">
+                        <img src="./public/depression4.jpg" alt="">         
+                    </div>
+                    <div class="image-card">
+                            <img src="./public/depresscause.jpg" alt="">         
+                    </div>      
+                </div>
+                   <div class="col-md-5 m-4">
+                       <p class="text-primary font-weight-bold">The causes of depression are not fully understood and may not be down to a single source. Depression is likely to be due to a complex combination of factors that include:</p>
+                    <ul class="text-primary font-weight-bold p-3" style="font-size: 17px; word-spacing: 4px;">
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Genetics</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Biological - changes in neurotransmitter levels</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Environmental</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Psychological and social (psychosocial)</li>
+                            <li class="mt-3"><i class="fas fa-angle-double-right mx-2"></i>Some people are at higher risk of depression than others; risk factors include:</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Life events: These include bereavement, divorce, work issues, relationships with friends and family, financial problems, medical concerns, or acute stress.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Personality: Those with less successful coping strategies or previous life trauma are more susceptible.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Genetic factors: Having a first-degree relative with depression increases the risk.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Childhood trauma.</li>
+                            <li class="mt-3"><i class="fas fa-angle-double-right mx-2"></i>	Some prescription drugs: These include corticosteroids, some beta-blockers, interferon, and other prescription drugs.</li>
+                            <li class="mt-3"><i class="fas fa-angle-double-right mx-2"></i>	Abuse of recreational drugs: Abuse of alcohol, amphetamines, and other drugs are strongly linked to depression.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	A past head injury.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Having had one episode of major depression: This increases the risk of a subsequent one.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Chronic pain syndromes: These and other chronic conditions, such as diabetes, chronic obstructive pulmonary disease, and cardiovascular disease make depression more likely.</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <div class="sathi-2 mt-5 p-2 py-5 ">
+            <div class="row d-flex justify-content-center">
+            <div class="col-md-10 d-flex flex-column justify-content-center">
+            <h2 class="text-center">treatment</h2>
+            <hr class="w-75">
+            <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                    Counseling or therapy may help a person manage the symptoms of depression.
+            </p>
+            <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                    Depression is a treatable mental illness. There are three components to the management of depression:
+            </p>
+            <hr class="w-75 my-3">
+            <ul class="text-primary font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                <li>
+                        <i class="fas fa-angle-double-right mx-2"></i>Support, ranging from discussing practical solutions and contributing stresses, to educating family members. 
+                </li>
+                <li>
+                        <i class="fas fa-angle-double-right mx-2"></i> Psychotherapy, also known as talking therapies, such as Cognitive behavioral therapy (CBT).
+                </li>
+                <li>
+                        <i class="fas fa-angle-double-right mx-2"></i>Drug treatment, specifically Antidepressants. 
+                </li>
+            </ul>
+            </div>
+            </div>
+            <hr class="my-3 w-50">
+                    <div class="row mx-2 mt-5 d-flex justify-content-center">
+                            <div class="col-md-8 m-2">
+                                <h1 class="text-center">Psychotherapy</h1>
+                                <hr class="w-25">
+                                <p class="text-primary text-center font-weight-bold">
+                                        Psychological or talking therapies for depression include cognitive-behavioral therapy (CBT), interpersonal psychotherapy, and problem-solving treatment. In mild cases of depression, psychotherapies are the first option for treatment; in moderate and severe cases, they may be used alongside other treatments. 
+                                </p>
+                                <p class="text-primary text-center font-weight-bold">
+                                        CBT and interpersonal therapy are the two main types of psychotherapy used in depression. CBT may be delivered in individual sessions with a therapist, face-to-face, in groups, or over the telephone. Some recent studies suggest that CBT may be delivered effectively through a computer. 
+                                </p>
+                                <p class="text-primary text-center font-weight-bold">
+                                        Interpersonal Therapy helps patients to identify emotional problems that affect relationships and communication, and how these, in turn, affect mood and can be changed.
+                                </p>
+                            </div>
+                    </div>
+                    <hr class="my-3 w-75">
+                    <div class="row mx-2 mt-3 d-flex justify-content-center">
+                            <div class="col-md-4 m-2">
+                                    <h1 class="text-center">Antidepressant medications</h1>
+                                    <hr class=" w-25">
+                                    <p class="text-primary text-center font-weight-bold">
+                                            Antidepressants are drugs available on prescription from a doctor. Drugs come into use for moderate to severe depression, but are not recommended for children, and will be prescribed only with caution for adolescents.
+                                    </p>
+                            </div>
+                            <div class="col-md-4 m-2">
+                                <h1 class="text-center">Exercise and other therapies</h1>
+                                <hr class=" w-25">
+                                <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                        Aerobic exercise may help against mild depression since it raises endorphin levels and stimulates the neurotransmitter norepinephrine, which is related to mood.
+                                </p>
+                            </div>
+                    </div>
+                    <hr class="my-3 w-75">
+                    <div class="row mx-2 mt-3 d-flex justify-content-center">
+                            <div class="col-md-4 m-2">
+                                    <h1 class="text-center">Brain stimulation therapies </h1>
+                                    <hr class=" w-25">
+                                    <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                            including electroconvulsive therapy - are also used in depression. Repetitive transcranial magnetic stimulation sends magnetic pulses to the brain and may be effective in major depressive disorder.
+                                    </p>
+                            </div>
+                            <div class="col-md-4 m-2">
+                                <h1 class="text-center">Electroconvulsive therapy</h1>
+                                <hr class=" w-25">
+                                <p class="text-primary text-center font-weight-bold" style="font-size: 17px; word-spacing: 4px;">
+                                        Severe cases of depression that have not responded to drug treatment may benefit from electroconvulsive therapy (ECT); this is particularly effective for psychotic depression.
+                                </p>
+                            </div>
+                    </div>
+        </div>
+        <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
+                    <div class="col-md-5 d-flex justify-content-center">
+                        <div class="image-card">
+                            <img src="./public/bipolar.gif" alt="">
+                        </div>    
+                    </div>
+                    <div class="col-md-5 d-flex flex-column justify-content-center">
+                        <h2 class="text-center">Types</h2>
+                        <h3 class="text-center">Unipolar and bipolar depression</h3>
+                        <hr class="w-75">
+                        <h4 class="text-center" style="text-transform:capitalize;">Symptoms of depression include reduced interest in pleasurable activities and lower mood.</h4>
+                        <hr class="w-75">
+                        <p class="text-primary text-center font-weight-bold">
+                                If the predominant feature is a depressed mood, it is called unipolar depression. However, if it is characterized by both manic and depressive episodes separated by periods of normal mood, it is referred to as bipolar disorder.
+                        </p>
+                        <p class="text-primary text-center font-weight-bold">
+                                Unipolar depression can involve anxiety and other symptoms - but no manic episodes. However, research shows that for around 40 percent of the time, individuals with bipolar disorder are depressed, making the two conditions difficult to distinguish.
+                        </p>
+                    </div>
+        </div>
+        <div class="sathi-1 mt-5 mx-2 p-2 py-5">
+        <h2 class="text-center ">These tips can help you feel better, starting right now.</h2>
+        <hr class="w-75">
+        <p class="text-center mx-4 text-primary font-weight-bold">
+                Get in a routine. If you’re depressed, you need a routine. Depression can strip away the structure from your life. One day melts into the next. Setting a gentle daily schedule can help you get back on track.
+        </p>
+        <hr class="w-75">
+        <div class="row d-flex justify-content-center">
+                    <div class="col-md-5 d-flex justify-content-center">
+                        <ul class="text-primary font-weight-bold p-3" style="font-size: 17px; word-spacing: 4px; font-family: 'quicksand',sans-serif">
+                                <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Set Goals. When you're depressed, you may feel like you can't accomplish anything. That makes you feel worse about yourself. To push back, set daily goals for yourself.  "Start very small, Make your goal something that you can succeed at, like doing the dishes every other day."</li>       
+                                <hr class="w-75">
+                                <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Exercise. It temporarily boosts feel-good chemicals called endorphins. It may also have long-term benefits for people with depression. Regular exercise seems to encourage the brain to rewire itself in positive ways.</li>
+                                <hr class="w-75">
+                                <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>How much exercise do you need? You don’t need to run marathons to get a benefit. Just walking a few times a week can help.</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-center">
+                            <ul class="text-primary font-weight-bold p-3" style="font-size: 17px; word-spacing: 4px; font-family: 'quicksand',sans-serif">
+                                    <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>
+                                        Eat healthily. There is no magic diet that fixes depression. It's a good idea to watch what you eat, though. If depression tends to make you overeat, getting in control of your eating will help you feel better.
+                                        <br>
+                                        Although nothing is definitive, there's evidence that foods with omega-3 fatty acids (such as salmon and tuna) and folic acid (such as spinach and avocado) could help ease depression.
+                                    </li>
+                                    <hr class="w-75">
+                                    <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>
+                                        Get enough sleep. Depression can make it hard to get enough shut-eye, and too little sleep can make depression worse.
+                                    </li>
+                                    <hr class="w-75">
+                                    <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>
+                                        What can you do? Start by making some changes to your lifestyle. Go to bed and get up at the same time every day. Try not to nap. Take all the distractions out of your bedroom -- no computer and no TV. In time, you may find your sleep improves.
+                                    </li>
+                            </ul>
+                    </div>
+        </div>
+    </div>
+        
+    
+      
+
+<%- include("partials/footer.ejs") %>
