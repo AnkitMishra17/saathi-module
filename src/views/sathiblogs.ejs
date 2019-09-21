@@ -1,0 +1,171 @@
+<%- include("partials/header.ejs") %>
+    <style>    
+    .banner-bg{
+        background-image: url('../public/287.jpg');
+        height: 500px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    img{
+        border-radius: 0px;
+    }
+    h1,h2,h3{
+        text-transform: capitalize;
+    }
+    ul li{
+        list-style-type: none;
+    }
+    p{
+        font-size: 17px;
+        word-spacing: 4px;
+    }
+    .image-card{
+        border-radius: 0px;
+    }
+    .card{
+        width: 400px;
+        border: 2px solid #90F9C4;
+        box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+    }
+    .overlay{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: 'molengo', sans-serif;
+        font-size: 75px;
+    }
+    .bg-success{
+        background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 34%);
+    }
+    @media only screen and (max-width: 768px){
+     .banner-bg{
+        background-image: url('../public/Blogpost.jpg');
+        height: 350px;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+     .btn{
+        background-color: #16c892;
+        text-transform: capitalize;
+        font-size: 12px;
+        padding: 9px;
+    }
+    .overlay{
+        font-size: 45px;
+    }
+    .image-card{
+        height: 320px;
+        width: 100%;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    }
+    </style>
+    <section class="banner-bg">         
+                            
+        <div class="show-login-btn" style="position: fixed; padding: 25px; color: black; z-index: 999;">
+        <i class="fas fa-bars fa-3x "></i>
+        </div>
+        <h1 class=" overlay text-center font-weight-light">Our Blogs</h1>
+        <%- include("partials/sidebar.ejs") %>
+      
+    </section>
+
+    <div class="row sathi-2 d-flex justify-content-center m-3">
+        <ul class="nav nav-tabs mt-3">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#addiction">Addiction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#stress">Stress</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" data-toggle="tab" href="#depression">Depression</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#suicideprevention">Suicide Prevention</a>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content my-5 mx-2">
+            <div class="tab-pane fade active show" id="addiction">
+                <div class="row mx-2 mt-3 d-flex justify-content-center">
+              <% for(let i = 0; i< topics.length; i++){ %>
+                <% if(topics[i] == 'Addiction') { %>
+                    <div class="col-md-5 mx-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="card mb-3">
+                            <p class="card-header text-center font-weight-bold text-primary bg-success"><%= title[i] %></p>
+                            <div class="image-card w-100">
+                                <img class="w-100"  style="height: 320px;" src="data:image/jpeg;base64,<%= images[i] %>" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            <% } %>
+            <% } %>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="stress">
+                <div class="row mx-2 mt-3 d-flex justify-content-center">
+                    <% for(let i = 0; i< topics.length; i++){ %>
+                        <% if(topics[i] == 'Stress') { %>
+                            <div class="col-md-5 mx-3">
+                                <div class="d-flex justify-content-center">
+                                    <div class="card mb-3">
+                                        <p class="card-header text-center font-weight-bold text-primary bg-success"><%= title[i] %></p>
+                                        <div class="image-card w-100">
+                                            <img class="w-100" style="height: 320px;" src="data:image/jpeg;base64,<%= images[i] %>" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <% } %>
+                    <% } %>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="depression">
+                    <div class="row mx-2 mt-3 d-flex justify-content-center">
+                        <% for(let i = 0; i< topics.length; i++){ %>
+                            <% if(topics[i] == 'Depression') { %>
+                                <div class="col-md-5 mx-3" >
+                                    <div class="d-flex justify-content-center">
+                                        <div class="card mb-3">
+                                            <p class="card-header font-weight-bold text-center text-primary bg-success"><%= title[i] %></p>
+                                            <div class="image-card w-100">
+                                                <img class="w-100" style="height: 320px;" src="data:image/jpeg;base64,<%= images[i] %>" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% } %>
+                        <% } %>
+                    </div>
+            </div>
+            <div class="tab-pane fade" id="suicideprevention">
+                    <div class="row mx-2 mt-3 d-flex justify-content-center">
+                        <% for(let i = 0; i< topics.length; i++){ %>
+                            <% if(topics[i] == 'Suicide Prevention') { %>
+                                <div class="col-md-5 mx-3">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="card mb-3">
+                                            <p class="card-header font-weight-bold text-center text-primary bg-success"><%= title[i] %></p>
+                                            <div class="image-card w-100">
+                                                <img class="w-100" style="height: 320px;" src="data:image/jpeg;base64,<%= images[i] %>" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% } %>
+                        <% } %>
+                    </div>
+            </div>
+          </div>
+    </div>
+
+<%- include("partials/footer.ejs") %>
