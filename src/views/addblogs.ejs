@@ -3,11 +3,20 @@
 
 <style>
     .title-container{
-      background: url('./public/') center center no-repeat;
+      background-image: url('./public/287.jpg');
+      background-attachment: fixed;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .title-container__title, .title-container__subtitle{
+      font-family: 'Quicksand', sans-serif;
     }
     textarea{
       background-color: #2c3e50;
       outline: none;
+    }
+    .bg-success{
+        background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 34%);
     }
 </style>
 <div class="sathi-2" style="height: 100vh">
@@ -15,7 +24,7 @@
   <div class="wrapper animated bounceInDown">
     <div class="company-info title-container">
           <h1 class="title-container__title display-4">Opdemy</h1>
-          <h3 class="title-container__subtitle">The Open Academy.</h3>
+          <h3 class="title-container__subtitle text-white">The Open Academy.</h3>
     </div>
     <form action="/add-blogs" method="POST" enctype="multipart/form-data" class="form-container">
         <h1 class="mb-3 text-center text-white">Upload Articles</h1> 
@@ -27,11 +36,20 @@
           <option value="Suicide Prevention" class="text-primary">Suicide Prevention</option>
         </select>  
         <input type="text" name="title" placeholder="Title" value="" class="text-white" required>
-        <input class="form-control" type="file" name="image" accept=""/>
+        <div class="custom-file mb-2">
+          <input class="custom-file-input" type="file" id="customFile" name="image" accept=""/>
+          <label class="custom-file-label bg-success text-primary font-weight-bold" for="customFile">Choose image</label>
+        </div>
         <textarea class="w-100 text-white" name="content" placeholder="start typing..." value="" id="" cols="30" rows="10" required ></textarea>
         <button type="submit" id="submit" class="mt-3 w-75 " >Publish Article</button>                
     </form>
   </div>
 </div>
 </div>
+<script>
+$('.custom-file-input').on('change', function() {
+    let fileName = $(this).val().split('\\').pop();
+    $(this).siblings('.custom-file-label').addClass('selected').html(fileName);
+});
+</script>
 <%- include("partials/footer.ejs") %>
