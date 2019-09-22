@@ -3,8 +3,9 @@
     .banner-bg{
         background-image: url('../public/stress.jpg');
         height: 500px;
+        box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
         background-attachment: fixed;
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -21,7 +22,7 @@
     @media only screen and (max-width: 768px){
      .banner-bg{
         background-image: url('../public/stress.jpg');
-        height: 250px;
+        height: 275px;
         background-attachment: fixed;
         background-position: top;
         background-size: contain;
@@ -43,7 +44,7 @@
         <div class="show-login-btn" style="position: fixed; padding: 25px; color: black; z-index: 999;">
         <i class="fas fa-bars fa-3x "></i>
         </div>
-        <h1 class="text-center overlay font-weight-light text-white">Stress</h1>
+        <h1 class="text-center overlay font-weight-light text-primary">Stress</h1>
         <%- include("partials/sidebar.ejs") %>
       
     </section>
@@ -57,14 +58,14 @@
                 </p>
             </div>
             <div class="col-md-5 d-flex justify-content-center">
-                <div class="image-card">
+                <div class="image-card d-flex justify-content-center">
                     <img src="./public/stress2.jpg" alt="">
                 </div>
             </div>
     </div>
     <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
             <div class="col-md-5 d-flex justify-content-center">
-                <div class="image-card">
+                <div class="image-card d-flex justify-content-center">
                     <img src="./public/stress.gif" alt="">
                 </div>
             </div>
@@ -142,11 +143,11 @@
         </div>
         <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
                 <div class="col-md-5 d-flex justify-content-center">
-                        <div class="image-card">
+                        <div class="image-card d-flex justify-content-center">
                                 <img src="./public/stress3.gif" alt="">
                         </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 mt-4">
                     <h2 class="text-center">Stress Management</h2>
                     <hr class="my-2">
                     <p class="text-primary font-weight-bold">

@@ -1,7 +1,11 @@
 <%- include("partials/header.ejs") %>
-    <style>    
+    <style>
+        .wrapper{
+            overflow-x: hidden;
+        }    
     .banner-bg{
         background-image: url('../public/depressionbg.jpg');
+        box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
         height: 500px;
         background-attachment: fixed;
         background-position: bottom;
@@ -24,7 +28,7 @@
     @media only screen and (max-width: 768px){
      .banner-bg{
         background-image: url('../public/depressionbg.jpg');
-        height: 250px;
+        height: 275px;
         background-attachment: fixed;
         background-position: top;
         background-size: contain;
@@ -36,17 +40,16 @@
         font-size: 12px;
         padding: 9px;
     }
-    *{
-        overflow-x: hidden;
-    }
     }
     </style>
+    <div class="wrapper">
+            
     <section class="banner-bg">         
                             
         <div class="show-login-btn" style="position: fixed; padding: 25px; color: black; z-index: 999;">
         <i class="fas fa-bars fa-3x "></i>
         </div>
-        <h1 class="overlay text-center font-weight-light text-white">Depression</h1>
+        <h1 class="overlay text-center font-weight-light text-primary">Depression</h1>
         <%- include("partials/sidebar.ejs") %>
       
     </section>
@@ -79,21 +82,17 @@
 
             </div>
             <div class="col-md-5 d-flex justify-content-center">
-                <div class="d-flex flex-column justify-content-center">
-                    <div class="image-card">
+                    <div class="image-card d-flex justify-content-center">
                         <img src="./public/depression01.jpg" alt="">
                     </div>
-                </div>
             </div>
     </div>
     <div class="sathi-2 mt-5 p-2 py-5 ">
         <div class="row mx-2 mt-3 d-flex justify-content-center">
                 <div class="col-md-5 d-flex justify-content-center">
-                        <div class="d-flex flex-column justify-content-center">
-                            <div class="image-card">
+                            <div class="image-card d-flex justify-content-center">
                                 <img src="./public/pills.jpg" alt="">
-                            </div>    
-                        </div>           
+                            </div>       
                 </div>
                 <div class="col-md-5">
                         <h2 class="text-center">Diagnosis starts with a consultation from a mental health expert.</h2>
@@ -122,7 +121,7 @@
                     </p>
                 </div>
                 <div class="col-md-5 d-flex justify-content-center">
-                    <div class="image-card">
+                    <div class="image-card d-flex justify-content-center">
                         <img src="./public/depression_2.jpg" alt="">
                     </div>
                 </div>
@@ -147,7 +146,7 @@
                 </div>
                 <div class="col-md-5 d-flex justify-content-center">
                     <div class="d-flex flex-column justify-content-center">
-                        <div class="image-card">
+                        <div class="image-card d-flex justify-content-center">
                             <img src="./public/depress.gif" alt="">
                         </div>
                     </div>
@@ -157,32 +156,38 @@
     <div class="sathi-2 mt-5  p-2 py-5 ">
         <h1 class="text-center">Causes</h1>
         <hr class="my-2 w-25">
+        <p class="text-primary font-weight-bold m-4">
+                The causes of depression are not fully understood and may not be down to a single source. Depression is likely to be due to a complex combination of factors that include:
+        </p>
+        <hr class="my-2 w-75">
         <div class="row mx-2 mt-3 d-flex justify-content-center">
-                <div class="col-md-5 d-flex flex-column justify-content-center">
-                    <div class="image-card">
+                <div class="col-md-5 d-flex justify-content-center">
+                    <div class="image-card d-flex justify-content-center">
                         <img src="./public/depression4.jpg" alt="">         
                     </div>
-                    <div class="image-card">
-                            <img src="./public/depresscause.jpg" alt="">         
-                    </div>      
                 </div>
-                   <div class="col-md-5 m-4">
-                       <p class="text-primary font-weight-bold">The causes of depression are not fully understood and may not be down to a single source. Depression is likely to be due to a complex combination of factors that include:</p>
+        </div>
+        <div class="row mx-2 mt-3 d-flex justify-content-center">
+                <div class="col-md-5 my-4">
                     <ul class="text-primary font-weight-bold p-3" style="font-size: 17px; word-spacing: 4px;">
                             <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Genetics</li>
                             <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Biological - changes in neurotransmitter levels</li>
                             <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Environmental</li>
                             <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Psychological and social (psychosocial)</li>
                             <li class="mt-3"><i class="fas fa-angle-double-right mx-2"></i>Some people are at higher risk of depression than others; risk factors include:</li>
-                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Life events: These include bereavement, divorce, work issues, relationships with friends and family, financial problems, medical concerns, or acute stress.</li>
-                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Personality: Those with less successful coping strategies or previous life trauma are more susceptible.</li>
-                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Genetic factors: Having a first-degree relative with depression increases the risk.</li>
-                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Childhood trauma.</li>
-                            <li class="mt-3"><i class="fas fa-angle-double-right mx-2"></i>	Some prescription drugs: These include corticosteroids, some beta-blockers, interferon, and other prescription drugs.</li>
-                            <li class="mt-3"><i class="fas fa-angle-double-right mx-2"></i>	Abuse of recreational drugs: Abuse of alcohol, amphetamines, and other drugs are strongly linked to depression.</li>
-                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	A past head injury.</li>
-                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Having had one episode of major depression: This increases the risk of a subsequent one.</li>
-                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>	Chronic pain syndromes: These and other chronic conditions, such as diabetes, chronic obstructive pulmonary disease, and cardiovascular disease make depression more likely.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Life events: These include bereavement, divorce, work issues, relationships with friends and family, financial problems, medical concerns, or acute stress.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Personality: Those with less successful coping strategies or previous life trauma are more susceptible.</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 my-4">
+                    <ul class="text-primary font-weight-bold p-3" style="font-size: 17px; word-spacing: 4px;">
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Genetic factors: Having a first-degree relative with depression increases the risk.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Childhood trauma.</li>
+                            <li class="mt-3"><i class="fas fa-angle-double-right mx-2"></i>Some prescription drugs: These include corticosteroids, some beta-blockers, interferon, and other prescription drugs.</li>
+                            <li class="mt-3"><i class="fas fa-angle-double-right mx-2"></i>Abuse of recreational drugs: Abuse of alcohol, amphetamines, and other drugs are strongly linked to depression.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>A past head injury.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Having had one episode of major depression: This increases the risk of a subsequent one.</li>
+                            <li class="my-3"><i class="fas fa-angle-double-right mx-2"></i>Chronic pain syndromes: These and other chronic conditions, such as diabetes, chronic obstructive pulmonary disease, and cardiovascular disease make depression more likely.</li>
                     </ul>
                 </div>
         </div>
@@ -265,7 +270,7 @@
         </div>
         <div class="row sathi-1 mt-5 mx-2 p-2 py-5 d-flex justify-content-center">
                     <div class="col-md-5 d-flex justify-content-center">
-                        <div class="image-card">
+                        <div class="image-card d-flex justify-content-center">
                             <img src="./public/bipolar.gif" alt="">
                         </div>    
                     </div>
@@ -320,8 +325,7 @@
                     </div>
         </div>
     </div>
-        
-    
+</div>
       
 
 <%- include("partials/footer.ejs") %>
