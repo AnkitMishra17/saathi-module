@@ -64,20 +64,39 @@ app.get('/Our-blogs', (req,res) =>{
       if (error){
           throw error;
       }else{
+        let id = new Array();
         let topics = new Array();
         let title = new Array();
         let content = new Array();
         let images = new Array();
         for(let i = 0; i < results.length; i++){
+          id[i] = results[i].id;
           topics[i] = results[i].topic;
           title[i] = results[i].title;
           images[i] = results[i].image;
           content[i] = results[i].content;
           content[i] = content[i].toString();
         }
-        res.render('sathiblogs',{topics: topics, title: title, images: images, content: content});
+        res.render('sathiblogs',{id: id, topics: topics, title: title, images: images, content: content});
       }    
   });
+});
+
+app.get('/blogs/:title/', (req,res) =>{
+  let id = req.query.id;
+  const sql = 'SELECT * FROM sathi_blogs WHERE id = ?';
+  connection.query(sql,[id], function (error, results, fields) {
+    if (error){
+        throw error;
+    }else{
+      let content = new Array();
+      for(let i = 0; i < results.length; i++){
+        content[i] = results[i].content;
+        content[i] = content[i].toString();
+      }
+      res.render('blog',{results: results, content: content});
+    }    
+});
 });
 
 //add-blogs
@@ -121,14 +140,3 @@ const server = app.listen(port, (req, res) => {
 
 
   // <% for(let i=0; i< topics.length; i++){ %>
-  //   <% if(content[i].includes("\n")) { %>
-  //       <% split = content[i].split("\n"); %>               
-  //       <% for(i=0;i< split.length;i++){ %>
-  //        <% split[i] = split[i].replace(/\@/g,",") %>             
-  //        <% split[i] = split[i].replace(/\$/g,"'") %>
-  //        <% split[i] = split[i].replace(/\^/g,"’") %>
-  //        <% split[i] = split[i].replace(/\#/g,"`") %>
-  //                   <p class="card-text font-weight-bold" style="font-size: 20px"><%= split[i] %></p>
-  //         <% } %>
-  //        <%  } %>
-  //        <%  } %>
