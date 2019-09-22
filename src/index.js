@@ -1,9 +1,10 @@
 const express = require('express');
-const session = require('express-session');
 const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
-const mysql = require('mysql');
 const path = require('path');
+const connection = require('./db/connection');
+
+const sathi = require("./routes/sathi-program");
 
 const app = express();
 const port = process.env.PORT || 3000
@@ -14,26 +15,13 @@ app.use(fileUpload());
 
 const viewsPath = path.join(__dirname, "/views");
 
-const connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : '',
-    database : 'opdemy'
-  });
-  
-connection.connect(function(err) {
-    if (err) {
-      console.error('error connecting: ' + err.stack);
-      return;
-    }
-  
-    console.log('Connection Established');
-  });  
-
 app.set('view engine', 'ejs')
 app.set("views", viewsPath)
 
 app.use('/public',express.static(path.join(__dirname, "../public")));
+
+// sathi-routes
+app.use("/program/sathi/", sathi);
 
 app.get('/', (req,res) =>{
           res.render('index');
@@ -58,46 +46,22 @@ app.get('/addiction', (req,res) =>{
   res.render('addiction');
 });
 
-app.get('/Our-blogs', (req,res) =>{
-  const sql = 'SELECT * FROM sathi_blogs';
-  connection.query(sql, function (error, results, fields) {
+app.get('/sathiblogs/:title', (req,res) =>{
+    let id = req.query.id;
+    const sql = 'SELECT * FROM sathi_blogs WHERE id = ?';
+    connection.query(sql,[id], function (error, results, fields) {
       if (error){
           throw error;
       }else{
-        let id = new Array();
-        let topics = new Array();
-        let title = new Array();
         let content = new Array();
-        let images = new Array();
         for(let i = 0; i < results.length; i++){
-          id[i] = results[i].id;
-          topics[i] = results[i].topic;
-          title[i] = results[i].title;
-          images[i] = results[i].image;
           content[i] = results[i].content;
           content[i] = content[i].toString();
         }
-        res.render('sathiblogs',{id: id, topics: topics, title: title, images: images, content: content});
+        res.render('blog',{results: results, content: content});
       }    
   });
-});
-
-app.get('/blogs/:title/', (req,res) =>{
-  let id = req.query.id;
-  const sql = 'SELECT * FROM sathi_blogs WHERE id = ?';
-  connection.query(sql,[id], function (error, results, fields) {
-    if (error){
-        throw error;
-    }else{
-      let content = new Array();
-      for(let i = 0; i < results.length; i++){
-        content[i] = results[i].content;
-        content[i] = content[i].toString();
-      }
-      res.render('blog',{results: results, content: content});
-    }    
-});
-});
+  });
 
 //add-blogs
 
@@ -137,6 +101,3 @@ app.post('/add-blogs', (req,res) =>{
 const server = app.listen(port, (req, res) => {
     console.log(`Server started at port ${port}..`)
   });
-
-
-  // <% for(let i=0; i< topics.length; i++){ %>
